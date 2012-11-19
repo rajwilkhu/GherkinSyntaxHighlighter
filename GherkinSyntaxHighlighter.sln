@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GherkinSyntaxHighlighter", "Src\GherkinSyntaxHighlighter.csproj", "{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GherkinSyntaxHighlighter.Tests.Unit", "..\GherkinSyntaxHighlighter.Tests.Unit\GherkinSyntaxHighlighter.Tests.Unit.csproj", "{1864EDB0-495A-4F48-B23F-4FBCE6487E57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1864EDB0-495A-4F48-B23F-4FBCE6487E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1864EDB0-495A-4F48-B23F-4FBCE6487E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1864EDB0-495A-4F48-B23F-4FBCE6487E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1864EDB0-495A-4F48-B23F-4FBCE6487E57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
