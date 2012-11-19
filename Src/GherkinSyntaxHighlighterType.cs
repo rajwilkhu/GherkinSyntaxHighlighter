@@ -8,6 +8,6 @@ namespace GherkinSyntaxHighlighter
     {
         [Export(typeof(ClassificationTypeDefinition))]
         [Name("GherkinSyntaxHighlighter")]
-        internal static ClassificationTypeDefinition GherkinSyntaxHighlighterType = null;
+        internal static ClassificationTypeDefinition GherkinSyntaxHighlighterType { get; set; }
     }
 }

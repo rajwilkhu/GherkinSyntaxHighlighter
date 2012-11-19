@@ -44,10 +44,10 @@
 
         private IList<ClassificationSpan> CreateClassificationSpans(SnapshotSpan trackingSpan)
         {
-            var classificationSpanExtractor = new GherkinClassificationSpans(
+            var gherkinClassificationSpans = new GherkinClassificationSpans(
                 trackingSpan.Snapshot, trackingSpan.Start);
-            classificationSpanExtractor.Parse(trackingSpan.GetText());
-            return classificationSpanExtractor.SnapshotSpans
+            gherkinClassificationSpans.Parse(trackingSpan.GetText());
+            return gherkinClassificationSpans.SnapshotSpans
                                               .Select(snapshotSpans => new ClassificationSpan(snapshotSpans, this.classificationTypeRegistryService.GetClassificationType("GherkinSyntaxHighlighter")))
                                               .ToList();
         }

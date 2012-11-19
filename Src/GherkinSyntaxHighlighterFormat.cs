@@ -8,6 +8,7 @@ namespace GherkinSyntaxHighlighter
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "GherkinSyntaxHighlighter")]
     [Name("GherkinSyntaxHighlighter")]
+    [DisplayName("Gherkin Syntax Highlighter")]
     [UserVisible(true)]
     [Order(Before = Priority.Default)]
     internal sealed class GherkinSyntaxHighlighterFormat : ClassificationFormatDefinition
@@ -15,8 +16,8 @@ namespace GherkinSyntaxHighlighter
         public GherkinSyntaxHighlighterFormat()
         {
             this.DisplayName = "Gherkin Syntax Highlighter";
-            this.BackgroundColor = Colors.BlueViolet;
-            this.TextDecorations = System.Windows.TextDecorations.Underline;
+            this.IsItalic = true;
+            this.ForegroundColor = Colors.Crimson;
         }
     }
 }
