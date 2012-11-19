@@ -61,11 +61,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GherkinClassificationSpans.cs" />
     <Compile Include="GherkinSyntaxHighlighterFormat.cs" />
     <Compile Include="GherkinSyntaxHighlighterProvider.cs" />
     <Compile Include="GherkinSyntaxHighlighterType.cs" />
     <Compile Include="GherkinSyntaxHighlighter.cs" />
     <Compile Include="Parser\ISyntaxParserObserver.cs" />
+    <Compile Include="Parser\CSharpPatternMatcher.cs" />
     <Compile Include="Parser\SyntaxParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

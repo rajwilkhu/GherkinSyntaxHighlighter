@@ -6,17 +6,39 @@ namespace GherkinSyntaxHighlighter
     using Microsoft.VisualStudio.Text.Classification;
     using Microsoft.VisualStudio.Utilities;
 
+    using global::GherkinSyntaxHighlighter.Parser;
+
     [Export(typeof(IClassifierProvider))]
     [ContentType("CSharp")]
     internal class GherkinSyntaxHighlighterProvider : IClassifierProvider
     {
+        private bool ignoreRequest;
+
         [Import]
         internal IClassificationTypeRegistryService ClassificationRegistry { get; set; }
 
+        [Import]
+        public IClassifierAggregatorService ClassifierAggregatorService { get; set; }
+
         public IClassifier GetClassifier(ITextBuffer buffer)
         {
-            return buffer.Properties.GetOrCreateSingletonProperty(
-                () => new GherkinSyntaxHighlighter(this.ClassificationRegistry));
+            if (this.ignoreRequest)
+            {
+                return null;
+            }
+
+            try
+            {
+                this.ignoreRequest = true;
+                return
+                    buffer.Properties.GetOrCreateSingletonProperty(() =>
+                        new GherkinSyntaxHighlighter(
+                            this.ClassifierAggregatorService.GetClassifier(buffer), this.ClassificationRegistry, new CSharpPatternMatcher()));
+            }
+            finally
+            {
+                this.ignoreRequest = false;
+            }
         }
     }
 }

@@ -3,7 +3,12 @@ namespace GherkinSyntaxHighlighter.Parser
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    public class SyntaxParser
+    public interface ISyntaxParser
+    {
+        void Parse(string identifier);
+    }
+
+    public class SyntaxParser : ISyntaxParser
     {
         private readonly ISyntaxParserObserver syntaxParserObserver;
         private readonly Regex regex = new Regex(@"(?<!__)([A-Z][a-z]+|(?<=[a-z])[A-Z]+)", RegexOptions.Compiled);
