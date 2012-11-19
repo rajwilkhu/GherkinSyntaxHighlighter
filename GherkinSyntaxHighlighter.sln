@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GherkinSyntaxHighlighter", "Src\GherkinSyntaxHighlighter.csproj", "{DD0BC6F6-3D1D-4A07-AEFA-A47B4C3C9A86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GherkinSyntaxHighlighter.Tests.Unit", "..\GherkinSyntaxHighlighter.Tests.Unit\GherkinSyntaxHighlighter.Tests.Unit.csproj", "{1864EDB0-495A-4F48-B23F-4FBCE6487E57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GherkinSyntaxHighlighter.Tests.Unit", "Tests.Unit\GherkinSyntaxHighlighter.Tests.Unit\GherkinSyntaxHighlighter.Tests.Unit.csproj", "{1864EDB0-495A-4F48-B23F-4FBCE6487E57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
