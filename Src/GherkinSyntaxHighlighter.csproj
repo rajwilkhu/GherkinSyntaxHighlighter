@@ -65,6 +65,8 @@
     <Compile Include="GherkinSyntaxHighlighterProvider.cs" />
     <Compile Include="GherkinSyntaxHighlighterType.cs" />
     <Compile Include="GherkinSyntaxHighlighter.cs" />
+    <Compile Include="Parser\ISyntaxParserObserver.cs" />
+    <Compile Include="Parser\SyntaxParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -72,9 +74,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parser\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\VSSDK\Microsoft.VsSDK.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
