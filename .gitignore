@@ -37,3 +37,4 @@ _ReSharper*/
 *.dbmdl
 *.dbproj.*
 *.InstallLog
+packages
