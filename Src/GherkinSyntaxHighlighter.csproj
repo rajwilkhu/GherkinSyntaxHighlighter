@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GherkinClassificationSpans.cs" />
-    <Compile Include="GherkinSyntaxHighlighterFormat.cs" />
+    <Compile Include="FormatDefinitions\GherkinSyntaxHighlighterFormat.cs" />
     <Compile Include="GherkinSyntaxHighlighterProvider.cs" />
     <Compile Include="GherkinSyntaxHighlighterType.cs" />
     <Compile Include="GherkinSyntaxHighlighter.cs" />

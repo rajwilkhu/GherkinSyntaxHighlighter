@@ -30,6 +30,7 @@ namespace GherkinSyntaxHighlighter
 
         public void Parse(string identifier)
         {
+            snapshotSpans.Clear();
             var syntaxParser = new SyntaxParser(this);
             syntaxParser.Parse(identifier);
         }
