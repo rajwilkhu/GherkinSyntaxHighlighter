@@ -23,8 +23,8 @@
                             {
                                 Brush =
                                     new LinearGradientBrush(
-                                    Colors.White, Colors.Magenta, new Point(0, 0.5), new Point(1, 0.5)) { Opacity = 0.5 },
-                                Thickness = 1.5,
+                                    Colors.Black, Colors.White, new Point(0.75, 0.5), new Point(1, 0.5)) { Opacity = 0.5 },
+                                Thickness = 1.75,
                                 DashStyle = DashStyles.Solid
                             };
 
