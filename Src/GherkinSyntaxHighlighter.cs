@@ -45,11 +45,9 @@
         private IList<ClassificationSpan> CreateClassificationSpans(SnapshotSpan trackingSpan)
         {
             var gherkinClassificationSpans = new GherkinClassificationSpans(
-                trackingSpan.Snapshot, trackingSpan.Start);
+                this.classificationTypeRegistryService, trackingSpan.Snapshot, trackingSpan.Start);
             gherkinClassificationSpans.Parse(trackingSpan.GetText());
-            return gherkinClassificationSpans.SnapshotSpans
-                                              .Select(snapshotSpans => new ClassificationSpan(snapshotSpans, this.classificationTypeRegistryService.GetClassificationType("GherkinSyntaxHighlighter")))
-                                              .ToList();
+            return gherkinClassificationSpans.ClassificationSpans.ToList();
         }
 
         private bool ShouldProcessBasedOnCheckingSpanPattern(IList<ClassificationSpan> classificationSpans)

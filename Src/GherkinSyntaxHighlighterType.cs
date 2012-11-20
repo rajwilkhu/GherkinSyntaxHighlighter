@@ -9,5 +9,9 @@
         [Export(typeof(ClassificationTypeDefinition))]
         [Name("GherkinSyntaxHighlighter")]
         internal static ClassificationTypeDefinition GherkinSyntaxHighlighterType { get; set; }
+
+        [Export(typeof(ClassificationTypeDefinition))]
+        [Name("PascalSyntaxHighlighter")]
+        internal static ClassificationTypeDefinition PascalSyntaxHighlighterType { get; set; }
     }
 }

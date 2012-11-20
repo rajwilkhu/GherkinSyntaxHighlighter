@@ -26,7 +26,7 @@
         }
 
         [Test]
-        public void WhenStringStartsAndContainsGherkinSntaxThenCallsObserverWithOneGivenAndOneAndSpan()
+        public void WhenStringStartsWithAndContainsGherkinSntaxThenCallsObserverWithOneGivenAndOneAndSpan()
         {
             var mockGherkinSyntaxParserObserver = Substitute.For<ISyntaxParserObserver>();
             var gherkinSyntaxParser = new SyntaxParser(mockGherkinSyntaxParserObserver);
@@ -45,7 +45,7 @@
         }
 
         [Test]
-        public void WhenStringStartsAndContainsGherkinSntaxThenCallsObserverWithOneWhenAndOneAndSpan()
+        public void WhenStringStartWithAndContainsGherkinSntaxThenCallsObserverWithOneWhenAndOneThenSpan()
         {
             var mockGherkinSyntaxParserObserver = Substitute.For<ISyntaxParserObserver>();
             var gherkinSyntaxParser = new SyntaxParser(mockGherkinSyntaxParserObserver);

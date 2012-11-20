@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
   <Identifier Id="GherkinSyntaxHighlighter..e7204abb-8cdd-44c5-969b-a40de895282e">
-    <Name>GherkinSyntaxHighlighter</Name>
+    <Name>Gherkin Syntax Highlighter for Unit Tests</Name>
     <Author>Raj Singh</Author>
     <Version>1.0</Version>
     <Description xml:space="preserve">Highlights Gherkin language constructs (Given, When, Then, And and But) in class and method names to enable easier reading of unit tests written in the BDD language.</Description>

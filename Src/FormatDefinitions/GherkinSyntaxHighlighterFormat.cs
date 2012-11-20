@@ -18,7 +18,8 @@
         {
             this.DisplayName = "Gherkin Syntax Highlighter";
             this.IsItalic = true;
-            this.ForegroundColor = Colors.Crimson;
+            this.ForegroundColor = Colors.Magenta;
+            this.IsBold = true;
         }
     }
 }
